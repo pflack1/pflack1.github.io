@@ -37,16 +37,3 @@
         </body>
     </function>
 </flowgorithm>
-
-```mermaid
-graph TD;
-A(Welcome to my game) --> B[Random Number Generate];
-B --> C{Enter a number 1-5};
-C --> D(User Guess); 
-D --> |Correct Guess| E[Correct!];
-D --> |Guess To Low| F{To Low Try Again};
-D --> |Guess To High| G(To High Try Again);
-E --> H{Done};
-F --> D;
-G --> D;
-```
